@@ -2,8 +2,6 @@
 
 Marketing site for Astraion Labs — [astraionlabs.com](https://astraionlabs.com).
 
-Built with Vite + React, using the [React Bits](https://reactbits.dev) `Galaxy` WebGL background.
-
 ## Development
 
 ```bash
