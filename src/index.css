@@ -5,7 +5,7 @@
   --text: #f4f4f8;
   --text-dim: rgba(244, 244, 248, 0.68);
   --text-faint: rgba(244, 244, 248, 0.45);
-  --accent: #8b7bff;
+  --accent: hsl(247, 100%, 74%);
   --accent-2: #5ee7c0;
   --radius: 14px;
   color-scheme: dark;
@@ -64,6 +64,18 @@ a {
 .brand.small {
   font-size: 0.95rem;
   display: block;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.site-nav a:hover {
+  color: var(--text);
 }
 
 /* Hero */
@@ -149,6 +161,7 @@ a {
   z-index: 2;
   background: var(--bg);
   padding: 5rem 1.5rem 7rem;
+  scroll-margin-top: 5.5rem;
 }
 
 .about-inner {
@@ -194,6 +207,91 @@ a {
   color: var(--text-dim);
   font-size: 0.92rem;
   line-height: 1.6;
+}
+
+/* Products */
+.products {
+  position: relative;
+  z-index: 2;
+  background: var(--bg);
+  padding: 0 1.5rem 7rem;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 5.5rem;
+}
+
+.products-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.products h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin: 0 0 0.6rem;
+  letter-spacing: -0.01em;
+}
+
+.products-intro {
+  color: var(--text-dim);
+  font-size: 1rem;
+  margin: 0 0 2rem;
+}
+
+.product-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  max-width: 480px;
+}
+
+.product-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-card-head h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.badge-soon {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent-2);
+  border: 1px solid rgba(94, 231, 192, 0.35);
+  background: rgba(94, 231, 192, 0.08);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+}
+
+.product-card p {
+  margin: 0 0 1.5rem;
+  color: var(--text-dim);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.store-badges {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  color: var(--text-faint);
+  font-size: 0.85rem;
 }
 
 /* Footer */
