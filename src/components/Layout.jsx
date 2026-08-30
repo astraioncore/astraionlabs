@@ -18,7 +18,7 @@ export default function Layout() {
     <div className="site">
       <header className="site-header">
         <Link to="/" className="brand">
-          Astraion&nbsp;Labs
+          Astraion&nbsp;Core
         </Link>
 
         <nav className="site-nav">
